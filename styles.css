@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    background-color: #003366; /* Navigation bar color */
+    color: #fff;
+    display: flex;
+    justify-content: center; /* Center align navigation */
+    padding: 15px 0; /* Header padding */
+    position: fixed; /* Fixed position */
+    top: 0; /* Sticks to the top */
+    z-index: 1000; /* Above other content */
+    width: 100%; /* Full width */
+}
+
+nav {
+    display: flex; /* Flexbox for navigation links */
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+nav a {
+    color: #fff; /* Link color */
+    margin: 0 15px; /* Spacing around links */
+    text-decoration: none;
+    font-size: 18px; /* Default font size */
+}
+.logo {
+    
+    font-weight: bold;
+    font-size: 1em; /* Logo size */
+    margin-right: auto; /* Pushes links to the right */
+}
+.navvv{
+    margin-left: auto;
+    display: flex;
+    align-items: flex-end;
+}
+/* Section Styles */
+section {
+    width: 80%; /* Width for sections */
+    margin: 80px auto; /* Center align with space for fixed header */
+    padding: 20px;
+    background-color: #fff; /* Section background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* Introduction Section */
+#home {
+    display: flex;
+    flex-direction: column; /* Column layout for mobile */
+    align-items: center; /* Center align */
+    text-align: center; /* Center align text */
+}
+
+.intro-content {
+    display: flex; /* Flexbox for image and text alignment */
+    align-items: center; /* Center align items vertically */
+}
+
+.profile-pic {
+    width: 150px; /* Profile picture size */
+    height: 150px;
+    border-radius: 50%; /* Circular image */
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Skills Section */
+#skills .skill-set {
+    display: flex; /* Flexbox for skill layout */
+    justify-content: space-between; /* Space between skills */
+    flex-wrap: wrap; /* Wrap skills on smaller screens */
+    gap: 20px; /* Space between skills */
+}
+
+.skill {
+    background-color: #e6f2ff; /* Skill card background color */
+    padding: 20px; /* Padding for skill cards */
+    border-radius: 10px; /* Rounded corners for skill cards */
+    flex: 1; /* Equal flex-grow */
+    min-width: 280px; /* Minimum width */
+}
+
+/* Projects Section */
+#projects .project-grid {
+    display: flex; /* Flexbox for project layout */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Space between projects */
+}
+
+.project {
+    background-color: #f0f9ff; /* Project card background color */
+    padding: 20px; /* Padding for project cards */
+    border-radius: 10px; /* Rounded corners for project cards */
+    flex: 1; /* Equal flex-grow */
+    min-width: 280px; /* Minimum width */
+}
+
+/* Contact Section */
+#contact form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Column layout */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+label {
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input, textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding for inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+button {
+    background-color: #003366; /* Button color */
+    color: #fff; /* Button text color */
+    padding: 10px; /* Padding for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #00509e; /* Lighter shade on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav a {
+        font-size: 14px; /* Smaller font size */
+        margin: 5px; /* Adjust margins */
+    }
+
+    section {
+        width: 90%; /* Increase section width on smaller screens */
+    }
+
+    .profile-pic {
+        width: 120px; /* Adjust profile picture size */
+        height: 120px;
+    }
+
+    .intro-content {
+        flex-direction: column; /* Column layout for intro content */
+        align-items: center; /* Center align */
+    }
+
+    .skill-set, .project-grid {
+        flex-direction: column; /* Stack skills and projects vertically */
+        align-items: center; /* Center align */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav a {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button font size */
+    }
+}
